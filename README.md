@@ -77,21 +77,37 @@ Please run this yourself to check for any updates on how to cite
 **test2022**.
 
 ``` r
-print(citation('test2022'), bibtex = TRUE)
+print(citation("test2022"), bibtex = TRUE)
 #> 
-#> To cite package 'test2022' in publications use:
-#> 
-#>   Emi Sotelo (2021). test2022: Tests for minicourse package.. R package
-#>   version 0.99.0. https://github.com/jemilianosf/test2022
+#> jemilianosf (2021). _Test2020._. doi: 10.18129/B9.bioc.test2022 (URL:
+#> https://doi.org/10.18129/B9.bioc.test2022),
+#> https://github.com/jemilianosf/test2022/test2022 - R package version
+#> 0.99.0, <URL: http://www.bioconductor.org/packages/test2022>.
 #> 
 #> A BibTeX entry for LaTeX users is
 #> 
 #>   @Manual{,
-#>     title = {test2022: Tests for minicourse package.},
-#>     author = {Emi Sotelo},
+#>     title = {Test2020.},
+#>     author = {{jemilianosf}},
 #>     year = {2021},
-#>     note = {R package version 0.99.0},
-#>     url = {https://github.com/jemilianosf/test2022},
+#>     url = {http://www.bioconductor.org/packages/test2022},
+#>     note = {https://github.com/jemilianosf/test2022/test2022 - R package version 0.99.0},
+#>     doi = {10.18129/B9.bioc.test2022},
+#>   }
+#> 
+#> jemilianosf (2021). "Test2020 paper." _bioRxiv_. doi: 10.1101/TODO
+#> (URL: https://doi.org/10.1101/TODO), <URL:
+#> https://www.biorxiv.org/content/10.1101/TODO>.
+#> 
+#> A BibTeX entry for LaTeX users is
+#> 
+#>   @Article{,
+#>     title = {Test2020 paper.},
+#>     author = {{jemilianosf}},
+#>     year = {2021},
+#>     journal = {bioRxiv},
+#>     doi = {10.1101/TODO},
+#>     url = {https://www.biorxiv.org/content/10.1101/TODO},
 #>   }
 ```
 

@@ -1,0 +1,29 @@
+pkgVer <- function(pkg) {
+    if (!exists("meta") || is.null(meta)) meta <- packageDescription(pkg)
+    ver <- meta$Version
+    paste0('https://github.com/jemilianosf/test2022/', pkg, ' - R package version ', ver)
+}
+
+c(
+
+    bibentry(bibtype="manual",
+        title = "Test2020.",
+        author = personList(
+            as.person("jemilianosf")
+        ),
+        year = format(Sys.Date(), "%Y"),
+        url = "http://www.bioconductor.org/packages/test2022",
+        note = pkgVer('test2022'),
+        doi = '10.18129/B9.bioc.test2022'
+    ),
+    bibentry(bibtype="article",
+        title = "Test2020 paper.",
+        author = personList(
+            as.person("jemilianosf")
+        ),
+        year = format(Sys.Date(), "%Y"),
+        journal = "bioRxiv",
+        doi = "10.1101/TODO",
+        url = "https://www.biorxiv.org/content/10.1101/TODO"
+    )
+)
